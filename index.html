@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filename Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="sun" style="font-size: 30px; color:rgb(65, 65, 65);">☾</span>
+        <span class="moon" style="font-size: 30px;">☀</span>
+    </button>
+    
+    <div class="container">
+        <h1>Input Formatter</h1>
+        
+        <div class="form-group">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" placeholder="Enter company name">
+        </div>
+        
+        <div class="form-group">
+            <label for="numberInput">TIN (with dashes):</label>
+            <input type="text" id="numberInput" placeholder="000-123-987-000">
+        </div>
+        
+        <div class="form-group">
+            <label for="dateInput">Date:</label>
+            <input type="date" id="dateInput">
+        </div>
+        
+        <div class="output-group">
+            <label>Output:</label>
+            <div id="output" class="output-box"></div>
+        </div>
+        
+        <button id="copyBtn">Copy to Clipboard</button>
+
+        <!-- <p>Made by Kuramu</p> -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
