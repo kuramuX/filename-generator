@@ -191,3 +191,148 @@ button.copied {
 #copyBtn {
     width: 100%;
 }
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+        align-items: flex-start;
+        padding-top: 80px;
+    }
+    
+    .container {
+        padding: 25px;
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .theme-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        top: 15px;
+        right: 15px;
+    }
+    
+    label {
+        font-size: 13px;
+    }
+    
+    input[type="text"],
+    input[type="date"] {
+        padding: 10px;
+        font-size: 16px; /* Keep at 16px to prevent zoom on iOS */
+    }
+    
+    .output-box {
+        padding: 12px;
+        font-size: 14px;
+        min-height: 45px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 18px;
+    }
+    
+    .output-group {
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+        padding-top: 75px;
+    }
+    
+    .container {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        top: 12px;
+        right: 12px;
+    }
+    
+    label {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    
+    input[type="text"],
+    input[type="date"] {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    
+    .output-box {
+        padding: 10px;
+        font-size: 13px;
+        min-height: 40px;
+        border-radius: 5px;
+    }
+    
+    button {
+        padding: 11px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .output-group {
+        margin: 20px 0;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    body {
+        padding: 10px;
+        padding-top: 60px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 12px;
+    }
+    
+    .output-group {
+        margin: 15px 0;
+    }
+    
+    input[type="text"],
+    input[type="date"],
+    button {
+        padding: 8px;
+    }
+}
